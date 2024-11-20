@@ -1,0 +1,157 @@
+/* General Body Styling */
+body {
+    font-family: 'Oswald', sans-serif; /* Changed font to Oswald for cinematic look */
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Black background for a cinematic feel */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* Poster Container */
+.poster {
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+    background: linear-gradient(to bottom, #111, #333); /* Subtle gradient for depth */
+    padding: 20px;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+/* Main Image Styling */
+.main-image {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Title Styling */
+.title {
+    font-size: 3em;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #e50914; /* Bold red for impact */
+    text-transform: uppercase;
+}
+
+/* Tagline Styling */
+.tagline {
+    font-size: 1.5em;
+    font-style: italic;
+    margin: 10px 0;
+    color: #ccc; /* Subtle gray for contrast */
+}
+
+/* Credits Section */
+.credits {
+    font-size: 1.1em; /* Increased font size for better readability */
+    margin-top: 20px;
+    line-height: 1.5;
+    border-top: 1px solid #fff;
+    padding-top: 10px;
+    color: #aaa; /* Softer gray for text */
+}
+
+/* Release Date Styling */
+.release-date {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #fff; /* Bright white for focus */
+}
+
+/* Links Section */
+.links {
+    margin-top: 20px;
+}
+
+/* Button Styling */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 1.2em;
+    background-color: #e50914; /* Red color for buttons */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Button Hover Effect */
+.button:hover {
+    background-color: #ff0000; /* Lighter red on hover */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Button Focus State (Accessibility) */
+.button:focus {
+    outline: 3px solid #ff0000;
+    outline-offset: 2px;
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 600px) {
+    .title {
+        font-size: 2.5em;
+    }
+    .tagline {
+        font-size: 1.2em;
+    }
+    .credits p {
+        font-size: 1em;
+    }
+}
+/* Poster Comparison Section */
+.poster-comparison {
+    text-align: center; /* Center the content */
+    margin-top: 40px; /* Add some space from the rest of the content */
+    padding: 20px;
+    background-color: #1c1c1c; /* Dark background for contrast */
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1); /* Subtle shadow for depth */
+}
+
+.poster-comparison h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #e50914; /* Red color for emphasis (matching theme) */
+    margin-bottom: 10px;
+}
+
+.poster-comparison p {
+    font-size: 1.2em;
+    color: #fff; /* White text color for better readability */
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.comparison-images {
+    display: flex; /* Align images horizontally */
+    justify-content: center; /* Center the images */
+    align-items: center; /* Vertically center */
+    margin-bottom: 20px;
+}
+
+.comparison-image {
+    width: 100%; /* Ensure the image takes full width of its container */
+    max-width: 500px; /* Limit the max width to keep the layout organized */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for the image */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3); /* Shadow to make the image pop */
+    margin: 0 10px; /* Space between images (useful if you add more in the future) */
+}
+
+/* Optional: Hover effect for the image */
+.comparison-image:hover {
+    transform: scale(1.05); /* Slight zoom-in effect */
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
